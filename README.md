@@ -32,6 +32,6 @@ npm i -g browser-sync
 browser-sync start --server --files "docs/index.html, css/tachyons.css"
 ```
 
-Open your browser to `localhost:3000/docs` (**note the /docs path**)
+Open your browser to `localhost:3000`.
 
 To only build the css to the `css/` directory, run `npm run build`.
