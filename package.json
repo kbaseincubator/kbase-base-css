@@ -1,16 +1,17 @@
 {
-  "name": "tachyons",
-  "version": "4.11.2",
+  "name": "kbase-css",
+  "version": "0.0.1",
   "description": "Functional CSS for humans",
-  "author": "mrmrs",
+  "author": "KBase Team (originally mrms and Tachyons)",
   "style": "css/tachyons.min.css",
   "main": "css/tachyons.css",
   "files": [
     "css",
     "src"
   ],
-  "repository": "tachyons-css/tachyons",
+  "repository": "kbaseincubator/kbase-css",
   "keywords": [
+    "kbase",
     "css",
     "oocss",
     "postcss",
@@ -21,25 +22,17 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
     "normalize.css": "^8.0.0",
-    "tachyons-modules": "^1.1.10",
     "tachyons-cli": "^1.3.2",
+    "tachyons-modules": "^1.1.10",
     "watch": "^1.0.2"
   },
-  "contributors": [
-    {
-      "name": "adam morse",
-      "email": "hi@mrmrs.cc"
-    },
-    {
-      "name": "john otander",
-      "url": "http://johnotander.com"
-    }
-  ],
   "scripts": {
     "start": "npm run build:watch",
+    "serve": "browser-sync start --server --files \"docs/index.html, css/tachyons.css\"",
     "mutations": "immutable-css src/tachyons.css --strict",
     "build": "npm run build:css && npm run build:minify",
     "build:css": "tachyons src/tachyons.css > css/tachyons.css",
