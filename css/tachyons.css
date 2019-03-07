@@ -387,8 +387,8 @@ img { max-width: 100%; }
 .b--green { border-color: #19a974; }
 .b--light-green { border-color: #9eebcf; }
 .b--navy { border-color: #001b44; }
-.b--dark-blue { border-color: #00449e; }
-.b--blue { border-color: #357edd; }
+.b--dark-blue { border-color: #4a868a; }
+.b--blue { border-color: #70cbd2; }
 .b--light-blue { border-color: #96ccff; }
 .b--lightest-blue { border-color: #cdecff; }
 .b--washed-blue { border-color: #f6fffe; }
@@ -709,25 +709,10 @@ img { max-width: 100%; }
    Docs: http://tachyons.io/docs/typography/font-family/
 
 */
-.sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
-.serif { font-family: georgia, times, serif; }
-.system-sans-serif { font-family: sans-serif; }
-.system-serif { font-family: serif; }
+body { font-family: Oxygen, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; font-size: 16px; }
 /* Monospaced Typefaces (for code) */
 /* From http://cssfontstack.com */
 code, .code { font-family: Consolas, monaco, monospace; }
-.courier { font-family: 'Courier Next', courier, monospace; }
-/* Sans-Serif Typefaces */
-.helvetica { font-family: 'helvetica neue', helvetica, sans-serif; }
-.avenir { font-family: 'avenir next', avenir, sans-serif; }
-/* Serif Typefaces */
-.athelas { font-family: athelas, georgia, serif; }
-.georgia { font-family: georgia, serif; }
-.times { font-family: times, serif; }
-.bodoni { font-family: "Bodoni MT", serif; }
-.calisto { font-family: "Calisto MT", serif; }
-.garamond { font-family: garamond, serif; }
-.baskerville { font-family: baskerville, serif; }
 /*
 
    FONT STYLE
@@ -1117,8 +1102,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .green { color: #19a974; }
 .light-green { color: #9eebcf; }
 .navy { color: #001b44; }
-.dark-blue { color: #00449e; }
-.blue { color: #357edd; }
+.dark-blue { color: #4a868a; }
+.blue { color: #70cbd2; }
 .light-blue { color: #96ccff; }
 .lightest-blue { color: #cdecff; }
 .washed-blue { color: #f6fffe; }
@@ -1175,8 +1160,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-green { background-color: #19a974; }
 .bg-light-green { background-color: #9eebcf; }
 .bg-navy { background-color: #001b44; }
-.bg-dark-blue { background-color: #00449e; }
-.bg-blue { background-color: #357edd; }
+.bg-dark-blue { background-color: #4a868a; }
+.bg-blue { background-color: #70cbd2; }
 .bg-light-blue { background-color: #96ccff; }
 .bg-lightest-blue { background-color: #cdecff; }
 .bg-washed-blue { background-color: #f6fffe; }
@@ -1345,10 +1330,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-light-green:focus { color: #9eebcf; }
 .hover-navy:hover { color: #001b44; }
 .hover-navy:focus { color: #001b44; }
-.hover-dark-blue:hover { color: #00449e; }
-.hover-dark-blue:focus { color: #00449e; }
-.hover-blue:hover { color: #357edd; }
-.hover-blue:focus { color: #357edd; }
+.hover-dark-blue:hover { color: #4a868a; }
+.hover-dark-blue:focus { color: #4a868a; }
+.hover-blue:hover { color: #70cbd2; }
+.hover-blue:focus { color: #70cbd2; }
 .hover-light-blue:hover { color: #96ccff; }
 .hover-light-blue:focus { color: #96ccff; }
 .hover-lightest-blue:hover { color: #cdecff; }
@@ -1395,10 +1380,10 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .hover-bg-light-green:focus { background-color: #9eebcf; }
 .hover-bg-navy:hover { background-color: #001b44; }
 .hover-bg-navy:focus { background-color: #001b44; }
-.hover-bg-dark-blue:hover { background-color: #00449e; }
-.hover-bg-dark-blue:focus { background-color: #00449e; }
-.hover-bg-blue:hover { background-color: #357edd; }
-.hover-bg-blue:focus { background-color: #357edd; }
+.hover-bg-dark-blue:hover { background-color: #4a868a; }
+.hover-bg-dark-blue:focus { background-color: #4a868a; }
+.hover-bg-blue:hover { background-color: #70cbd2; }
+.hover-bg-blue:focus { background-color: #70cbd2; }
 .hover-bg-light-blue:hover { background-color: #96ccff; }
 .hover-bg-light-blue:focus { background-color: #96ccff; }
 .hover-bg-lightest-blue:hover { background-color: #cdecff; }
@@ -1945,7 +1930,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .nested-copy-indent p+p { text-indent: 1em; margin-top: 0; margin-bottom: 0; }
 .nested-copy-separator p+p { margin-top: 1.5em; }
 .nested-img img { width: 100%; max-width: 100%; display: block; }
-.nested-links a { color: #357edd; transition: color .15s ease-in; }
+.nested-links a { color: #70cbd2; transition: color .15s ease-in; }
 .nested-links a:hover { color: #96ccff; transition: color .15s ease-in; }
 .nested-links a:focus { color: #96ccff; transition: color .15s ease-in; }
 /*

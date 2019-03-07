@@ -9,9 +9,300 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/tachyons.css">
   </head>
-  <body>
+  <body class='black-7'>
+
+    <section class='ph4 mt3'>
+      <div class='mw8'>
+        <h1 class='sans-serif f1'>KBase CSS</h1>
+        <p>Low-level Tachyons-based CSS examples. Right-click and inspect each element to view the source Tachyons classes for each.</p>
+
+        <p>This can be used as a reference when creating javascript-based UI components.</p>
+
+        <p>
+          Resources:
+          <ul>
+            <li> <a class='link' href='https://github.com/kbaseincubator/kbase-css'>KBase CSS repo, with usage docs</a></li>
+            <li> <a class='link' href='http://tachyons.io/'>Tachyons docs</a></li>
+          </ul>
+        </p>
+      </div>
+    </section>
+
+    <section class='b--black-10 bt ph4 pv2'>
+      <div class='mw8'>
+        <h1>Buttons</h1>
+        <p>Basic submit buttons.</p>
+        <div>
+          <a class='f5 link dim ph3 pv2 mb2 dib white bg-dark-blue b br2' href='javascript:;'>Submit</a>
+          <a class='f5 link dim ph3 pv2 mb2 dib white bg-dark-green b br2' href='javascript:;'>Submit</a>
+          <a class='f5 link dim ph3 pv2 mb2 dib white bg-dark-pink b br2' href='javascript:;'>Submit</a>
+          <a class='f5 link dim ph3 pv2 mb2 dib white bg-dark-red b br2' href='javascript:;'>Submit</a>
+        </div>
+        <div>
+          <a class='f5 link dim ph3 pv2 mb2 dib ba b--dark-blue dark-blue b br2' href='javascript:;'>Submit</a>
+          <a class='f5 link dim ph3 pv2 mb2 dib ba b--dark-green dark-green b br2' href='javascript:;'>Submit</a>
+          <a class='f5 link dim ph3 pv2 mb2 dib ba b--dark-pink dark-pink b br2' href='javascript:;'>Submit</a>
+          <a class='f5 link dim ph3 pv2 mb2 dib ba b--dark-red dark-red b br2' href='javascript:;'>Submit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class='b--black-10 bt ph4 pv2 mt4'>
+      <div class='mw8'>
+        <h1>Forms & fields</h1>
+        <p>Form inputs, text-areas, drop-downs, etc.</p>
+        <div>
+          <form class="black-80">
+            <div class="measure">
+              <fieldset class='bn pa0'>
+                <label for="name" class="b db mb2">
+                  Field name
+                  <span class="normal black-60">(optional)</span>
+                </label>
+                <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
+                <small id="name-desc" class="f6 black-60 db mb2">Optional helper text.</small>
+              </fieldset>
+
+              <fieldset class='bn pa0 mt3'>
+                <label class='db b mb2'>
+                  Simple dropdown
+                  <span class="normal black-60">(required)</span>
+                </label>
+                <select class='br2 bn bg-light-gray pa2 black-80'>
+                  <option>Option A</option>
+                  <option>Option B</option>
+                  <option>Option C</option>
+                </select>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class='b--black-10 bt ph4 pv2 mt4'>
+      <div class='mw8'>
+        <h1>Tabs</h1>
+        <h2>Horizontal, top</h2>
+
+        <div class="bg-white mt3 ba b--black-20 overflow-hidden">
+          <div class="bg-dark-blue f5 flex">
+            <a class="dib link pa3 white" href="javascript:;">Top</a>
+            <a class="dib link pa3 white b bb bw2" href="javascript:;">Tab</a>
+            <a class="dib link pa3 white" href="javascript:;">Bar</a>
+          </div>
+
+          <div class="ph3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ullam, vero earum atque deserunt error voluptas doloremque tempore, iure eum ipsum sed dignissimos, eveniet veniam quam in et aliquid sint!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ullam, vero earum atque deserunt error voluptas doloremque tempore, iure eum ipsum sed dignissimos, eveniet veniam quam in et aliquid sint!</p>
+          </div>
+        </div>
+
+
+        <h2>Vertical, side</h2>
+        <div class="bg-white mt3 1 ba b--black-20 br2 overflow-hidden flex">
+          <div class="f5 br bw1 b--black-10 flex flex-column">
+            <a class="db link pv3 ph4 black" href="javascript:;">Side</a>
+            <a class="db link pv3 ph4 dark-blue b--teal b br bw2" href="javascript:;">Tab</a>
+            <a class="db link pv3 ph4 black" href="javascript:;">Bar</a>
+          </div>
+          <div class="flex-auto ph3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam illum saepe nemo maiores dolor nam nobis, suscipit cum vitae quaerat sint aliquam, molestias voluptatem eius fugiat error quia. Doloremque, officia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ullam, vero earum atque deserunt error voluptas doloremque tempore, iure eum ipsum sed dignissimos, eveniet veniam quam in et aliquid sint!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class='b--black-10 bt ph4 pv2 mt4'>
+      <div class='mw8'>
+        <h1> Definition list </h1>
+
+        <p class='black-80'>Left and right justified with muted borders. Emphasize labels.</p>
+
+        <div class='mw6'>
+          <dl class="ma0 flex justify-between bb b--black-20 pv2">
+            <dt class="dib b">Mash Distance</dt>
+            <dd class="dib ml0 grau tr black-70">0.0215191</dd>
+          </dl>
+          <dl class="ma0 flex justify-between bb b--black-20 pv2">
+            <dt class="dib b">Workspace Type</dt>
+            <dd class="dib ml0 grau tr black-70">KBaseGenomes.Genome-11.2</dd>
+          </dl>
+          <dl class="ma0 flex justify-between pv2">
+            <dt class="dib b">Knowledge Score</dt>
+            <dd class="dib ml0 grau tr black-70">76</dd>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <section class='b--black-10 bt ph4 pv2 mt4'>
+      <div class='mw8'>
+        <h1> Data list </h1>
+        <p>For generic listings of things, such as objects, narratives, etc.</p>
+
+        <div class='dt pointer hover-dark-blue'>
+          <div class='dtr'>
+            <div class='dtc'>
+              <span class='v-mid br-100 h2 w2 tc bg-blue dtc b white'>X</span>
+            </div>
+            <span class='v-mid ph3 dtc b'>
+              Syntrophobacter fumaroxidans
+              <span class='normal black-60'>MPOBT</span>
+              <span class='normal db black-60'>Transcriptome analysis in the presence of two stressors after 12 days of treatment</span>
+            </span>
+            <span class='v-mid ph3 dtc'>Jose Faria</span>
+            <span class='v-mid ph3 dtc'>12/12/2016</span>
+          </div>
+          <div class='dtr'>
+          </div>
+        </div>
+
+        <div class='dt pointer hover-dark-blue pt3 mt3 bt b--black-20'>
+          <div class='dtr'>
+            <div class='dtc'>
+              <span class='v-mid br-100 h2 w2 tc bg-green dtc b white'>Y</span>
+            </div>
+            <span class='v-mid ph3 dtc b'>
+              Syntrophobacter fumaroxidans
+              <span class='normal black-60'>MPOBT</span>
+              <span class='normal db black-60'>Transcriptome analysis in the presence of two stressors after 12 days of treatment</span>
+            </span>
+            <span class='v-mid ph3 dtc'>Jose Faria</span>
+            <span class='v-mid ph3 dtc'>12/12/2016</span>
+          </div>
+          <div class='dtr'>
+          </div>
+        </div>
+
+        <div class='dt pointer hover-dark-blue pt3 mt3 bt b--black-20'>
+          <div class='dtr'>
+            <div class='dtc'>
+              <span class='v-mid br-100 h2 w2 tc bg-orange dtc b white'>Z</span>
+            </div>
+            <span class='v-mid ph3 dtc b'>
+              Syntrophobacter fumaroxidans
+              <span class='normal black-60'>MPOBT</span>
+              <span class='normal db black-60'>Transcriptome analysis in the presence of two stressors after 12 days of treatment</span>
+            </span>
+            <span class='v-mid ph3 dtc'>Jose Faria</span>
+            <span class='v-mid ph3 dtc'>12/12/2016</span>
+          </div>
+          <div class='dtr'>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class='b--black-10 bt ph4 pv2 mt4'>
+      <div class='mw8'>
+        <h1> Tables </h1>
+
+        <h2> Simple tables </h2>
+        <p> Tables without filtering and pagination for displaying limited data.</p>
+        <table class="w-100 mw8 center" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Name</th>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Username</th>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Email</th>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">ID</th>
+            </tr>
+          </thead>
+          <tbody class="lh-copy">
+            <tr>
+              <td class="pv2 pr3 bb b--black-20">Hassan Johnson</td>
+              <td class="pv2 pr3 bb b--black-20">@hassan</td>
+              <td class="pv2 pr3 bb b--black-20">hassan@companywithalongdomain.co</td>
+              <td class="pv2 pr3 bb b--black-20">14419232532474</td>
+            </tr>
+            <tr>
+              <td class="pv2 pr3 bb b--black-20">Taral Hicks</td>
+              <td class="pv2 pr3 bb b--black-20">@hicks</td>
+              <td class="pv2 pr3 bb b--black-20">taral@companywithalongdomain.co</td>
+              <td class="pv2 pr3 bb b--black-20">72326219423551</td>
+            </tr>
+            <tr>
+              <td class="pv2 pr3 bb b--black-20">Tyrin Turner</td>
+              <td class="pv2 pr3 bb b--black-20">@tt</td>
+              <td class="pv2 pr3 bb b--black-20">ty@companywithalongdomain.co</td>
+              <td class="pv2 pr3 bb b--black-20">92325170324444</td>
+            </tr>
+            <tr>
+              <td class="pv2 pr3 bb b--black-20">Oliver Grant</td>
+              <td class="pv2 pr3 bb b--black-20">@oli</td>
+              <td class="pv2 pr3 bb b--black-20">oliverg@companywithalongdomain.co</td>
+              <td class="pv2 pr3 bb b--black-20">71165170352909</td>
+            </tr>
+            <tr>
+              <td class="pv2 pr3 bb b--black-20">Dean Blanc</td>
+              <td class="pv2 pr3 bb b--black-20">@deanblanc</td>
+              <td class="pv2 pr3 bb b--black-20">dean@companywithalongdomain.co</td>
+              <td class="pv2 pr3 bb b--black-20">71865178111909</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class='b--black-10 bt ph4 pv2 mt4'>
+      <div class='mw8'>
+        <h1> Cards </h1>
+
+        <article class="mw5 mr2 bg-white br3 pa3 pa4-ns mv3 ba b--black-10 dib">
+          <div class="tc">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Mimi W.</h1>
+            <h2 class="f5 fw4 gray mt0">CCO (Chief Cat Officer)</h2>
+          </div>
+        </article>
+
+        <article class="mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10 dib">
+          <div class="tc">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+            <h1 class="f3 mb2">Mimi W.</h1>
+            <h2 class="f5 fw4 gray mt0">CCO (Chief Cat Officer)</h2>
+          </div>
+        </article>
+
+        <hr>
+
+        <article class="mw5 mr2 bg-white br3 pa2 pa4-ns mv3 ba b--black-10 dib">
+          <div class="tc">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h3 w3 dib" title="Photo of a kitty staring at you">
+            <h1 class="f4">Mimi Whitehouse</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+          </div>
+          <p class="lh-copy measure center black-70">
+            Quite affectionate and outgoing.
+            She loves to get chin scratches and will
+            roll around on the floor waiting for you give her more of them.
+          </p>
+        </article>
+
+        <article class="mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10 dib">
+          <div class="tc">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h3 w3 dib" title="Photo of a kitty staring at you">
+            <h1 class="f4">Mimi Whitehouse</h1>
+            <hr class="mw3 bb bw1 b--black-10">
+          </div>
+          <p class="lh-copy measure center black-70">
+            Quite affectionate and outgoing.
+            She loves to get chin scratches and will
+            roll around on the floor waiting for you give her more of them.
+          </p>
+        </article>
+
+      </div>
+    </section>
 
   </body>
 </html>
