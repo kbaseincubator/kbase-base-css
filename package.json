@@ -1,7 +1,7 @@
 {
-  "name": "kbase-css",
+  "name": "@kbase/base-css",
   "version": "0.0.1",
-  "description": "Functional CSS for humans",
+  "description": "KBase CSS basics with Tachyons",
   "author": "KBase Team (originally mrms and Tachyons)",
   "style": "css/tachyons.min.css",
   "main": "css/tachyons.css",
@@ -12,13 +12,7 @@
   "repository": "kbaseincubator/kbase-css",
   "keywords": [
     "kbase",
-    "css",
-    "oocss",
-    "postcss",
-    "functional css",
-    "design",
-    "responsive",
-    "performance"
+    "css"
   ],
   "license": "MIT",
   "devDependencies": {
