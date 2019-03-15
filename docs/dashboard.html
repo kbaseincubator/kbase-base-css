@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Dashboard Mockup | KBase CSS</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="tachyons.css">
+  </head>
+  <body>
+
+    <section class='ph4 mt3 mw8 center'>
+      <!-- narrative lists -->
+
+      <!-- narratives header nav -->
+      <div class='flex justify-between mb3'>
+        <!-- tabs -->
+        <div>
+          <ul class='list pa0 ma0 flex items-center'>
+            <li class='dib pv2 ph3 bl bt bb br-ns b bg-dark-blue white b--black-20 br2 br--left-ns'>My narratives</li>
+            <li class='dib pv2 pointer bt bb br dim ph3 br-ns b--black-20'>Shared with me</li>
+            <li class='dib pv2 pointer bt bb br dim ph3 br-ns b--black-20'>Tutorials</li>
+            <li class='dib pv2 pointer bt bb br dim ph3 b--black-20 br2 br--right-ns'>Public</li>
+          </ul>
+        </div>
+
+        <!-- search -->
+        <div>
+          <a class='pa2 white br2 b bg-green dib'> <i class="fas fa-plus"></i> New Narrative </a>
+        </div>
+
+      </div>
+
+      <!-- narrative listing -->
+      <div class='ba b--black-20'>
+        <!-- table header -->
+        <div class='bg-light-gray flex justify-between'>
+          <!-- left-aligned actions -->
+          <div>
+          </div>
+
+          <!-- right-aligned actions -->
+          <div class='pa2'>
+            <div class='relative'>
+              <i class='fas fa-search black-30 absolute' style='top:0.7rem; left:0.5rem;'></i>
+              <input class='w5-l pa2 br2 bw1 b--solid b--black-20' type='text' placeholder='Search narratives' style='padding-left:2rem'>
+            </div>
+          </div>
+        </div>
+
+        <!-- table of narratives-->
+        <table class="pa3 w-100 mw8 center" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Narrative</th>
+              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Total Cells</th>
+              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Created</th>
+              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Updated</th>
+              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Sharing</th>
+            </tr>
+          </thead>
+          <tbody class="lh-copy">
+            <tr class='pointer'>
+              <td class="b pv2 pr3 bb b--black-20">Rhodo Assembly - Spades (KG)</td>
+              <td class="pv2 pr3 bb b--black-20">16</td>
+              <td class="pv2 pr3 bb b--black-20">2019-10-01</td>
+              <td class="pv2 pr3 bb b--black-20">8 hours ago</td>
+              <td class="pv2 pr3 bb b--black-20">Private</td>
+            </tr>
+            <tr class='pointer'>
+              <td class="b pv2 pr3">Build a Gene Tree - Tutorial - Copy</td>
+              <td class="pv2 pr3 b--black-20">4</td>
+              <td class="pv2 pr3 b--black-20">2019-10-01</td>
+              <td class="pv2 pr3 b--black-20">8 hours ago</td>
+              <td class="pv2 pr3 b--black-20">Private</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
