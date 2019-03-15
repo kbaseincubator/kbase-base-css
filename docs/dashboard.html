@@ -17,70 +17,94 @@
       <!-- narrative lists -->
 
       <!-- narratives header nav -->
-      <div class='flex justify-between mb3'>
+      <div class='flex justify-between'>
         <!-- tabs -->
-        <div>
+        <div class='pt2'>
           <ul class='list pa0 ma0 flex items-center'>
-            <li class='dib pv2 ph3 bl bt bb br-ns b bg-dark-blue white b--black-20 br2 br--left-ns'>My narratives</li>
-            <li class='dib pv2 pointer bt bb br dim ph3 br-ns b--black-20'>Shared with me</li>
-            <li class='dib pv2 pointer bt bb br dim ph3 br-ns b--black-20'>Tutorials</li>
-            <li class='dib pv2 pointer bt bb br dim ph3 b--black-20 br2 br--right-ns'>Public</li>
+            <li style='position:relative; top: 1px' class='mr2 dib pv3 ph3 br--top br2 bt bl br b bg-light-gray b--black-20'>My narratives</li>
+            <li style='position:relative; top: 1px' class='mr2 dib pv3 pointer br--top br2 bt bl br dim ph3 b--black-20 black-80'>Shared with me</li>
+            <li style='position:relative; top: 1px' class='mr2 dib pv3 pointer br--top br2 bt bl br dim ph3 b--black-20 black-80'>Tutorials</li>
+            <li style='position:relative; top: 1px' class='mr2 dib pv3 pointer br--top br2 bt bl br dim ph3 b--black-20 black-80'>Public</li>
           </ul>
         </div>
 
         <!-- search -->
-        <div>
-          <a class='pa2 white br2 b bg-green dib'> <i class="fas fa-plus"></i> New Narrative </a>
+        <div class='pt2'>
+          <a class='pointer dim pa2 white br2 b bg-green dib'> <i class="fas fa-plus"></i> New Narrative </a>
         </div>
 
       </div>
 
       <!-- narrative listing -->
       <div class='ba b--black-20'>
-        <!-- table header -->
+
+        <!-- search and sort -->
         <div class='bg-light-gray flex justify-between'>
+
           <!-- left-aligned actions -->
-          <div>
+          <div class='pa3'>
+            <div class='relative'>
+              <i class='fas fa-search black-30 absolute' style='top:0.65rem; left:0.5rem;'></i>
+              <input class='w5-l pa2 br2 ba b--solid b--black-20' type='text' placeholder='Search' style='padding-left:2rem'>
+            </div>
           </div>
 
           <!-- right-aligned actions -->
           <div class='pa2'>
-            <div class='relative'>
-              <i class='fas fa-search black-30 absolute' style='top:0.7rem; left:0.5rem;'></i>
-              <input class='w5-l pa2 br2 bw1 b--solid b--black-20' type='text' placeholder='Search narratives' style='padding-left:2rem'>
-            </div>
+            <a class='dim dib pa3 pointer'>Sort <i class="fas fa-caret-down"></i></a>
           </div>
         </div>
 
-        <!-- table of narratives-->
-        <table class="pa3 w-100 mw8 center" cellspacing="0">
-          <thead>
-            <tr>
-              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Narrative</th>
-              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Total Cells</th>
-              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Created</th>
-              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Updated</th>
-              <th class="o-70 bb b--black-50 tl pv2 pr3 bg-white">Sharing</th>
-            </tr>
-          </thead>
-          <tbody class="lh-copy">
-            <tr class='pointer'>
-              <td class="b pv2 pr3 bb b--black-20">Rhodo Assembly - Spades (KG)</td>
-              <td class="pv2 pr3 bb b--black-20">16</td>
-              <td class="pv2 pr3 bb b--black-20">2019-10-01</td>
-              <td class="pv2 pr3 bb b--black-20">8 hours ago</td>
-              <td class="pv2 pr3 bb b--black-20">Private</td>
-            </tr>
-            <tr class='pointer'>
-              <td class="b pv2 pr3">Build a Gene Tree - Tutorial - Copy</td>
-              <td class="pv2 pr3 b--black-20">4</td>
-              <td class="pv2 pr3 b--black-20">2019-10-01</td>
-              <td class="pv2 pr3 b--black-20">8 hours ago</td>
-              <td class="pv2 pr3 b--black-20">Private</td>
-            </tr>
-          </tbody>
-        </table>
+        <!-- narrative list -->
+        <div class='pa3 flex'>
+          <!-- narrative columns -->
+          <div class='w-40'>
+            <div class='pb3 pt2 br b--black-20'>
+              <h4 class='o-50 ma0 mb2 pa0 f5'>Rhodo Assembly - Spades (KG)</h4>
+              <p class='o-50 ma0 pa0 black-70 f6'>Updated 26 days ago by you</p>
+            </div>
+
+            <div class='dim bt br b--black-20 pointer pv3'>
+              <h4 class="ma0 mb2 pa0 f5 dark-blue">Build a Gene Tree - Tutorial - Copy</h4>
+              <p class='ma0 pa0 black-70 f6'>Updated 3 months ago by you</p>
+            </div>
+
+            <div class='dim bt br b--black-20 pointer pb2 pt3'>
+              <h4 class="ma0 mb2 pa0 f5 dark-blue">FastANI - Variovorax test</h4>
+              <p class='ma0 pa0 black-70 f6'>Updated 6 months ago by you</p>
+            </div>
+          </div>
+
+          <!-- details side panel -->
+          <div class='w-60 h-100 bg-white pv2 ph3'>
+            <h4 class='ma0 pa0'>Rhodo Assembly - Spades (KG)</h4>
+            <ul>
+              <li>Author</li>
+              <li>Sharing</li>
+              <li>Created</li>
+              <li>Updated</li>
+              <li>Total cells</li>
+              <li>Copy</li>
+              <li>Share</li>
+            </ul>
+          </div>
+
+        </div>
       </div>
+
+      <!-- pagination -->
+      <div class='mt3 f6 flex justify-center'>
+        <span class='dib bt bl bb bg-white black-20 pv2 ph3 br2 br--left'>
+          Previous
+        </span>
+        <a class='b dib ba b--black-20 bg-blue white pv2 ph3'> 1 </a>
+        <a class='b dim pointer dib bt bb br b--black-20 bg-white black-70 pv2 ph3'> 2 </a>
+        <a class='b dim pointer dib bt bb b--black-20 bg-white black-70 pv2 ph3'> 3 </a>
+        <a class='b dim pointer dib ba bg-white black-70 pv2 ph3 br2 br--right b--black-20'>
+          Next
+        </a>
+      </div>
+
     </section>
   </body>
 </html>
