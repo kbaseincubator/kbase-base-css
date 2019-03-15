@@ -21,17 +21,14 @@ Or install via npm.
 After cloning this repo:
 
 ```sh
-npm install
+npm i
 npm start
 ```
 
-In another terminal, start the server:
+In another terminal, start a development server:
 
 ```sh
-npm i -g browser-sync
-browser-sync start --server --files "docs/index.html, css/tachyons.css"
+npm run serve
 ```
 
-Open your browser to `localhost:3000`.
-
-To only build the css to the `css/` directory, run `npm run build`.
+To build the CSS for distribution, run `npm run build`.
