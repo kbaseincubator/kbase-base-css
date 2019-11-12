@@ -21,14 +21,14 @@ Or install via npm.
 After cloning this repo:
 
 ```sh
-npm i
-npm start
+yarn i
+yarn start
 ```
 
 In another terminal, start a development server:
 
 ```sh
-npm run serve
+yarn run serve
 ```
 
 To build the CSS for distribution, run `npm run build`.
