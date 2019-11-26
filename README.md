@@ -21,7 +21,7 @@ Or install via npm.
 After cloning this repo:
 
 ```sh
-yarn i
+yarn install
 yarn start
 ```
 

@@ -25,12 +25,12 @@
     "watch": "^1.0.2"
   },
   "scripts": {
-    "start": "npm run build:watch",
+    "start": "yarn run build:watch",
     "serve": "(cd docs && browser-sync start --server --files \"index.html, tachyons.css\")",
     "mutations": "immutable-css src/tachyons.css --strict",
-    "build": "npm run build:css && npm run build:minify",
+    "build": "yarn run build:css && yarn run build:minify",
     "build:css": "tachyons src/tachyons.css > css/tachyons.css && cp css/tachyons.css docs/tachyons.css",
     "build:minify": "tachyons src/tachyons.css --minify > css/tachyons.min.css",
-    "build:watch": "watch \"npm run build\" ./src/"
+    "build:watch": "watch \"yarn run build\" ./src/"
   }
 }
