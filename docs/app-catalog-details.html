@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>App Catalog Details Page Mockup | KBase CSS</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="tachyons.css">
+  </head>
+  <body>
+
+    <section class='ph4 mt4 mw8 center'>
+
+      <!-- Breadcrumbs -->
+      <div class='flex items-center'>
+        <span class='mr3'>
+            <a class='link blue b pointer dim'>
+              Apps
+            </a>
+        </span>
+        <span class='fas fa-chevron-right mr2 o-40 f6'></span>
+        <span>
+          kb_trimmomatic
+        </span>
+      </div>
+
+      <!-- Header -->
+
+      <div class='flex items-top pv2 mt3'>
+        <div class='dib w3 h3 bg-blue br2 mr3'></div>
+
+        <div>
+          <h2 class='mb1 p0 mt0'>Trim Reads with Trimmomatic - v0.36</h2>
+          <p class='black-80'>
+            Trim paired- or single-end Illumina reads with Trimmomatic.
+          </p>
+        </div>
+      </div>
+
+      <div class='flex'>
+        <div class='' style='width: 65%'>
+          <!-- App description text -->
+          <div class='pr4'>
+            <p>This is a Narrative Method for running <a href="http://www.usadellab.org/cms/?page=trimmomatic">Trimmomatic: A flexible read trimming tool for Illumina NGS data.</a>
+            Trimmomatic is written by <a href="http://www.usadellab.org/cms/index.php?page=BolgerAnthony">Anthony Bolger</a> from the <a href="http://www.usadellab.org">Bjorn Usadel Lab</a>.
+            </p>
+            <br>
+            Trimmomatic version: 0.36: <a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.36.zip">binary</a>, <a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-Src-0.36.zip">source</a>, <a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf">manual</a>.
+            <br>
+            <h3>Description</h3>
+            <p>Trimmomatic performs a variety of useful trimming tasks for Illumina paired-end and single ended data. These tasks are performed as a series of steps. At least one step must be specified, and steps are run in the following order.</p>
+            <p>The current steps are:</p>
+
+            <h4>Adapter clipping:</h4> This step will remove Illumina adapters from the reads. You need to select one of the predefined adapter sets and set parameters for match criteria. Suggested adapter sequences are provided for TruSeq2 (as used in GAII machines) and TruSeq3 (as used by HiSeq and MiSeq machines), for both single-end and paired-end mode. You can find more information on the adapters in the <a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf">Trimmomatic manual</a>.
+            <ul>
+              <li><b>Adapters</b>: Select one of the predefined adapter sets.</li>
+              <li><b>Seed mismatches</b>: The maximum number of mismatches that will allow a full match to be performed. To speed up search, short sections of each adapter (upto 16bp) are tested at all possible positions to find "seeds" that trigger a full alignment. This Seed mismatch parameter specifies the allowable mismatches for a seed.</li>
+              <li><b>Simple clip threshold</b>: Alignment minimum score threshold for match, suggested values are 7-15. Score equals 0.6 per match minus Q/10 per mismatch.</li>
+              <li><b>Palindrome clip threshold</b>: Using the same scoring as above, the pair of reads is aligned. Suggested value around 30.</li>
+            </ul>
+
+            <h4>Crop reads:</h4> Removes bases, regardless of their quality, from the end of the read, so that the read has the specified length. Steps performed after Crop might further shorten the read.
+            <ul>
+              <li><b>Crop length</b>: Number of bp to keep, from the start of the read.</li>
+            </ul>
+
+            <h4>Head crop:</h4> Removes the specified number of bases, regardless of quality, from the beginning of the read.
+            <ul>
+              <li><b>Head crop length</b>: Number of bp to remove from the start of a read.</li>
+            </ul>
+
+            <h4>Leading minimum quality:</h4> Remove low quality bases from the beginning, i.e., bases with a value below this threshold.
+            <ul>
+              <li><b>Leading minimum quality</b>: Minimum quality score.</li>
+            </ul>
+
+            <h4>Trailing minimum quality:</h4> Remove low quality bases from the end. As long as a base has a value below this threshold, the base is removed and the next base is investigated. This approach can be used for removing the special Illumina 'low quality segment' regions (which have a quality score of 2), but we recommend Sliding window for that.
+            <ul>
+              <li><b>Trailing minimum quality</b>: Minimum quality score.</li>
+            </ul>
+
+            <h4>Sliding window:</h4> Performs sliding window trimming once the average quality within the window falls below specified threshold. By considering multiple bases, a single poor quality base will not cause the removal of high quality data later in the read.
+            <ul>
+              <li><b>Sliding window size</b>: length of window in bp.</li>
+              <li><b>Sliding window minimum quality</b>: The average quality required.</li>
+            </ul>
+
+            <h4>Minimum read length:</h4> This removes reads that fall below the specified minimum length. Reads removed by this step are included in the 'dropped reads' count.
+            <ul>
+              <li><b>Minimum read length</b>: Length in bp.</li>
+            </ul>
+          </div>
+
+           <div class='mt4 pt2 pr4 bt b--black-20'>
+             <h3>Publications</h3>
+             <!-- App publications and citations -->
+             <div class='mb4'>
+
+               <p class='pl2 bl bw1 b--light-green'>
+               Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for
+               Illumina sequence data. Bioinformatics. 2014;30: 2114 2120.
+               doi:10.1093/bioinformatics/btu170
+               http://www.ncbi.nlm.nih.gov/pubmed/24695404
+               </p>
+
+               <p class='pl2 bl bw1 b--light-green'>
+               http://www.usadellab.org/cms/?page=trimmomatichttp://www.usadellab.org/cms/?page=trimmomatic
+               </p>
+             </div>
+           </div>
+        </div>
+
+        <div class='pv3 ph4 bl b--black-20 bg-washed-blue' style='width: 35%'>
+          <div class='flex mb4'>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Total runs</div>
+              <div class='b f4 black-90'>10</div>
+            </div>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Total stars</div>
+              <div class='b f4 black-90'>20</div>
+            </div>
+          </div>
+
+          <div class='flex mb4'>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Success rate</div>
+              <div class='b f4 black-90'>23.1%</div>
+            </div>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Average run time</div>
+              <div class='b f4 black-90'>6m 23s</div>
+            </div>
+          </div>
+
+          <div class='mb4'>
+            <div class='black-60 mb2'>Source code</div>
+
+            <div class='b truncate'>
+              <a class='link blue pointer dim'>
+                <span class='fas fa-external-link-alt o-60'></span>
+                https://github.com/kbaseapps/kb_trimmomatic
+              </a>
+            </div>
+          </div>
+
+          <div class='mb4'>
+            <div class='black-60 mb2'>Authors</div>
+
+            <div class='truncate'>
+              psdehal, dchivian, jjeffryes
+            </div>
+          </div>
+
+          <div class='mb4'>
+            <div class='black-60 mb2'>Versions</div>
+            <div class='mb1'>
+              <strong>Release:</strong> 0.0.1
+            </div>
+            <div class='mb1'>
+              <strong>Beta:</strong> 0.2.0
+            </div>
+            <div class=''>
+              <strong>Development:</strong> 0.3.1
+            </div>
+          </div>
+
+          <div>
+            <div class='black-60 mb2'>Example uses</div>
+            <a class='link blue pointer dim db mb3'>
+              Arabidopsis RNA-seq Analysis Tutorial
+            </a>
+            <a class='link blue pointer dim db mb3'>
+              Microbial Metabolic Model Reconstruction and Analysis Tutorial
+            </a>
+            <a class='link blue pointer dim db mb3'>
+              Genome Extraction from Shotgun Metagenome Sequence Data
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </body>
+</html>
+
