@@ -13,7 +13,7 @@
   </head>
   <body>
 
-    <section class='ph4 mt4 center' style='max-width: 78rem;'>
+    <section class='ph4 mt4 center' style='max-width: 70rem;'>
 
       <!-- Breadcrumbs -->
       <div class='flex items-center'>
@@ -30,27 +30,105 @@
 
       <!-- Header -->
 
-      <div class='flex items-top pv2 mt3'>
-        <div class='dib w3 h3 bg-blue br2 mr3'></div>
+      <div class='flex pt4'>
 
-        <div>
-          <h2 class='mb1 p0 mt0'>Trim Reads with Trimmomatic - v0.36</h2>
-          <p class='black-80'>
-            Trim paired- or single-end Illumina reads with Trimmomatic.
-          </p>
+        <div class='pr4 br b--black-20' style='width: 30%'>
+
+          <div class='flex justify-center items-center mt2' style='margin-bottom: 3.6rem'>
+            <div style='width: 5.5rem; height: 5.5rem;' class='dib bg-blue br3 mr3 shadow-2'></div>
+          </div>
+
+          <div class='flex mb4'>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Total runs</div>
+              <div class='b f4 black-80'>10</div>
+            </div>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Total stars</div>
+              <div class='b f4 black-80'>20</div>
+            </div>
+          </div>
+
+          <div class='flex bb b--black-10 mb3 pb3'>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Success rate</div>
+              <div class='b f4 black-80'>23.1%</div>
+            </div>
+            <div class='w-50'>
+              <div class='black-60 mb2'>Average run time</div>
+              <div class='b f4 black-80'>6m 23s</div>
+            </div>
+          </div>
+
+          <div class='bb b--black-10 mb3 pb3'>
+            <div class='black-60 mb2'>Source code</div>
+
+            <div class='b truncate'>
+              <a class='link blue pointer dim'>
+                <span class='fas fa-external-link-alt o-60'></span>
+                https://github.com/kbaseapps/kb_trimmomatic
+              </a>
+            </div>
+          </div>
+
+          <div class='mb3 pb3 bb b--black-10'>
+            <div class='black-60 mb2'>Authors</div>
+            <div class='truncate'>
+              <a class='pointer blue dim'>psdehal,</a>
+              <a class='pointer blue dim'>dchivian,</a>
+              <a class='pointer blue dim'>jjeffryes</a>
+            </div>
+          </div>
+
+          <div class='mb3 pb3 bb b--black-10'>
+            <div class='black-60 mb2'>Versions</div>
+            <div class='mb1'>
+              <span class='b black-70'>Release:</span> 0.0.1
+            </div>
+            <div class='mb1'>
+              <strong class='b black-70'>Beta:</strong> 0.2.0
+            </div>
+            <div class=''>
+              <strong class='b black-70'>Development:</strong> 0.3.1
+            </div>
+          </div>
+
+          <div>
+            <div class='black-60 mb3'>Example uses</div>
+            <a class='link blue pointer dim db mb3'>
+              Arabidopsis RNA-seq Analysis Tutorial
+            </a>
+            <a class='link blue pointer dim db mb3'>
+              Microbial Metabolic Model Reconstruction and Analysis Tutorial
+            </a>
+            <a class='link blue pointer dim db mb3'>
+              Genome Extraction from Shotgun Metagenome Sequence Data
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class='flex'>
-        <div class='' style='width: 65%'>
+        <div style='width: 70%'>
+
+          <div class='ph4 mb3'>
+            <h1 class='mb0 p0 mt0'>Trim Reads with Trimmomatic - v0.36</h1>
+            <p class='mt2 black-60 mb3'>
+              Trim paired- or single-end Illumina reads with Trimmomatic.
+            </p>
+            <a class='bg-green white b pv2 mt1 ph3 br3 dib pointer dim mb3 o-60'>
+              <span class='fas fa-rocket mr1'></span>
+              Run this app
+            </a>
+          </div>
+
           <!-- App description text -->
-          <div class='pr4'>
+          <div class='ph4'>
             <p>This is a Narrative Method for running <a href="http://www.usadellab.org/cms/?page=trimmomatic">Trimmomatic: A flexible read trimming tool for Illumina NGS data.</a>
             Trimmomatic is written by <a href="http://www.usadellab.org/cms/index.php?page=BolgerAnthony">Anthony Bolger</a> from the <a href="http://www.usadellab.org">Bjorn Usadel Lab</a>.
             </p>
-            <br>
+            <p>
             Trimmomatic version: 0.36: <a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.36.zip">binary</a>, <a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-Src-0.36.zip">source</a>, <a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf">manual</a>.
-            <br>
+            </p>
+
             <h3>Description</h3>
             <p>Trimmomatic performs a variety of useful trimming tasks for Illumina paired-end and single ended data. These tasks are performed as a series of steps. At least one step must be specified, and steps are run in the following order.</p>
             <p>The current steps are:</p>
@@ -95,93 +173,25 @@
             </ul>
           </div>
 
-           <div class='mt4 pt2 pr4 bt b--black-20 bg-black-05 pa4'>
-             <h3>Publications</h3>
-             <!-- App publications and citations -->
-             <div class='mb4'>
+          <div class='mt4 pt2 pr4 bt b--black-20 bg-black-05 pa4'>
+            <h3>Publications</h3>
+            <!-- App publications and citations -->
+            <div class='mb4'>
 
-               <p class=''>
-               Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for
-               Illumina sequence data. Bioinformatics. 2014;30: 2114 2120.
-               doi:10.1093/bioinformatics/btu170
-               http://www.ncbi.nlm.nih.gov/pubmed/24695404
-               </p>
+              <p class=''>
+              Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for
+              Illumina sequence data. Bioinformatics. 2014;30: 2114 2120.
+              doi:10.1093/bioinformatics/btu170
+              http://www.ncbi.nlm.nih.gov/pubmed/24695404
+              </p>
 
-               <p class=''>
-               http://www.usadellab.org/cms/?page=trimmomatichttp://www.usadellab.org/cms/?page=trimmomatic
-               </p>
-             </div>
-           </div>
+              <p class=''>
+              http://www.usadellab.org/cms/?page=trimmomatichttp://www.usadellab.org/cms/?page=trimmomatic
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class='pv3 ph4 bl b--black-20 bg-washed-blue' style='width: 35%'>
-          <div class='flex mb4'>
-            <div class='w-50'>
-              <div class='black-60 mb2'>Total runs</div>
-              <div class='b f4 black-90'>10</div>
-            </div>
-            <div class='w-50'>
-              <div class='black-60 mb2'>Total stars</div>
-              <div class='b f4 black-90'>20</div>
-            </div>
-          </div>
-
-          <div class='flex mb4'>
-            <div class='w-50'>
-              <div class='black-60 mb2'>Success rate</div>
-              <div class='b f4 black-90'>23.1%</div>
-            </div>
-            <div class='w-50'>
-              <div class='black-60 mb2'>Average run time</div>
-              <div class='b f4 black-90'>6m 23s</div>
-            </div>
-          </div>
-
-          <div class='mb4'>
-            <div class='black-60 mb2'>Source code</div>
-
-            <div class='b truncate'>
-              <a class='link blue pointer dim'>
-                <span class='fas fa-external-link-alt o-60'></span>
-                https://github.com/kbaseapps/kb_trimmomatic
-              </a>
-            </div>
-          </div>
-
-          <div class='mb4'>
-            <div class='black-60 mb2'>Authors</div>
-
-            <div class='truncate'>
-              psdehal, dchivian, jjeffryes
-            </div>
-          </div>
-
-          <div class='mb4'>
-            <div class='black-60 mb2'>Versions</div>
-            <div class='mb1'>
-              <strong>Release:</strong> 0.0.1
-            </div>
-            <div class='mb1'>
-              <strong>Beta:</strong> 0.2.0
-            </div>
-            <div class=''>
-              <strong>Development:</strong> 0.3.1
-            </div>
-          </div>
-
-          <div>
-            <div class='black-60 mb3'>Example uses</div>
-            <a class='link blue pointer dim db mb3'>
-              Arabidopsis RNA-seq Analysis Tutorial
-            </a>
-            <a class='link blue pointer dim db mb3'>
-              Microbial Metabolic Model Reconstruction and Analysis Tutorial
-            </a>
-            <a class='link blue pointer dim db mb3'>
-              Genome Extraction from Shotgun Metagenome Sequence Data
-            </a>
-          </div>
-        </div>
       </div>
 
     </section>
